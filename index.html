@@ -74,13 +74,8 @@
       .button:hover {
         text-decoration: none;
       }
-      @media (min-width: 768px) {
-        .content {
-          max-width: 45em;
-        }
-      }
       nav {
-        margin: var(--huge);
+        margin: var(--baseline);
         display: flex;
         align-items: center;
       }
@@ -98,7 +93,7 @@
         padding-right: var(--tiny);
       }
       section {
-        padding: var(--huge);
+        padding: var(--baseline);
         color: var(--dark);
         background-color: var(--light);
       }
@@ -113,7 +108,7 @@
         display: flex;
         align-items: center;
         height: 90vh;
-        padding: 0 var(--huge);
+        padding: 0 var(--baseline);
       }
       #home .button {
         color: var(--dark);
@@ -135,6 +130,20 @@
       }
       #clients .logos svg {
         fill: var(--grey);
+      }
+      @media (min-width: 768px) {
+        .content {
+          max-width: 45em;
+        }
+        nav {
+          margin: var(--huge);
+        }
+        section {
+          padding: var(--huge);
+        }
+        #home {
+          padding: 0 var(--huge);
+        }
       }
     </style>
   </head>
